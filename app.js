@@ -4,9 +4,11 @@ import express from "express";
 import connectDB from "./db/connect.js";
 import authRouter from "./routes/auth.js";
 import jobsRouter from "./routes/jobs.js";
+//errors
 import notFound from "./middleware/not-found.js";
 import errorHandlerMiddleware from "./middleware/error-handler.js";
 import authenticateUser from "./middleware/authentication.js";
+//security
 import helmet from "helmet";
 import cors from "cors";
 import xss from "xss-clean";
